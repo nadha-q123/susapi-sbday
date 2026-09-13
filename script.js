@@ -1,3 +1,25 @@
+// PASSWORD PROTECTION
+const PASSWORD = "kiran";
+
+function checkPassword() {
+  const input = document.getElementById("passwordInput");
+  const message = document.getElementById("passwordMessage");
+
+  const enteredPassword = input.value.trim().toLowerCase();
+
+  if (enteredPassword === PASSWORD.toLowerCase()) {
+    document.getElementById("passwordScreen").classList.add("hidden");
+    document.getElementById("mainWebsite").classList.remove("hidden");
+
+    // Start at the top of the website
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+  } else {
+    message.textContent = "Hmm… that's not it 😭 Try again.";
+    input.value = "";
+    input.focus();
+  }
+}
 const TOTAL = 5;
 let found = 0;
 let unlocked = 1;
