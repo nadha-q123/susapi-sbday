@@ -1,5 +1,5 @@
 // PASSWORD PROTECTION
-const PASSWORD = "kiran";
+const PASSWORD = "05102006";
 
 function checkPassword() {
   const input = document.getElementById("passwordInput");
