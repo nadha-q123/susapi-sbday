@@ -9,8 +9,8 @@ const data = {
     title:"The old photograph",
     body:`Some photographs are just photographs. Others somehow keep a whole little piece of time inside them.`,
     photo:"photo1.jpeg",
-    clue:`I am not a photograph, but a photograph can bring me back. You cannot hold me in your hands, yet you keep collecting me. I can make you smile years after I happened. What am I?`,
-    answers:["memory","memories"],
+    clue:`I am not a photograph, but a photograph can bring me back. You cannot hold me in your hands, yet you keep collecting me. College kayyumbol koode kond pokan pattum varshanglk sheshavum ith matrhe koode indavu. What am I?`,
+    answers:["memory","memories","ormakal"],
     next:"A little message"
   },
   2: {
@@ -19,7 +19,7 @@ const data = {
     body:`There is something about hearing a familiar voice that makes a tiny message feel much bigger than it is.`,
     audio:"voice-note.mp4",
     icon:"♫",
-    clue:`I disappear the moment you hear me, but you can replay me whenever you want. I can make you laugh without showing a face, and I can carry someone's voice across the distance. What am I?`,
+    clue:`I disappear the moment you hear me, but you can replay me whenever you want.  What am I?`,
     answers:["voice","voice note","voice message","voicenote","voicemessage"],
     next:"A folded note"
   },
@@ -28,8 +28,8 @@ const data = {
     title:"One name",
     body:`A tiny note, folded up like it has something important to hide.`,
     icon:"✉",
-    clue:`A name can belong to millions. But a nickname can belong to just one. It is not the name written on your birthday cake. It is the name that appears in my messages to you. What is it?`,
-    answers:["chuchapi","chuchaapi","chuchapii","chuchapy"],
+    clue:`A name can belong to millions. But a nickname can belong to just one. It is the name that appears in my messages to you. What is it?`,
+    answers:["chuchapi","chuchaapi","susapi","chuchapan","chuchi"],
     next:"Something playing"
   },
   4: {
