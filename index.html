@@ -10,6 +10,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- PASSWORD SCREEN -->
+  <section id="passwordScreen" class="password-screen">
+    <div class="password-card">
+      <div class="password-heart">♡</div>
+
+      <p class="password-small">A LITTLE SECRET</p>
+
+      <h1>Before you enter…</h1>
+
+      <p class="password-text">
+        This little box is not for everyone. 🤍
+      </p>
+
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Enter the password…"
+        autocomplete="off"
+        onkeydown="if(event.key==='Enter') checkPassword()"
+      >
+
+      <button onclick="checkPassword()">ENTER ♡</button>
+
+      <p id="passwordMessage"></p>
+    </div>
+  </section>
+
+  <!-- ACTUAL WEBSITE -->
+  <div id="mainWebsite" class="hidden">
+
   <div id="paperBits"></div>
 
   <header class="topbar">
@@ -104,6 +135,8 @@
 
   <div class="toast" id="toast"></div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+
+  </div>
 </body>
 </html>
