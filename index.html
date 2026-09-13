@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Nadha's Box of Random Things ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Dancing+Script:wght@500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="paperBits"></div>
+
+  <header class="topbar">
+    <div class="brand">NADHA'S LITTLE BOX</div>
+    <div class="date">05 · 10 · 2006</div>
+  </header>
+
+  <main>
+    <section class="intro" id="intro">
+      <div class="paper-note">
+        <span class="tiny-label">A PRIVATE LITTLE DISCOVERY</span>
+        <h1>Box of<br><em>Random Things</em></h1>
+        <p>I found a few things that reminded me of you.</p>
+        <p>I don't know why I kept them all.</p>
+        <p class="hand">Actually… I do. ♡</p>
+        <button class="wax-button" onclick="openBox()">OPEN THE BOX</button>
+      </div>
+    </section>
+
+    <section class="box-section hidden" id="boxSection">
+      <div class="section-heading">
+        <span>ITEMS INSIDE</span>
+        <h2>Some things are meant<br>to be found.</h2>
+        <p>There are no ordinary objects in this box. Find them in order.</p>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-label"><span id="progressText">0 of 5 found</span><span>♡</span></div>
+        <div class="progress"><div id="progressBar"></div></div>
+      </div>
+
+      <div class="box-layout">
+        <div class="wood-box">
+          <div class="box-lid">NADHA'S<br><span>RANDOM THINGS</span></div>
+
+          <button class="object photo-object locked" id="obj1" onclick="openObject(1)">
+            <span class="object-tape"></span>
+            <span class="photo-stack"><img src="photo1.jpeg" alt="An old memory"></span>
+            <span class="object-label">ONE OLD PHOTO</span>
+            <span class="lock">✦</span>
+          </button>
+
+          <button class="object voice-object locked" id="obj2" onclick="openObject(2)">
+            <span class="paper-icon">♫</span>
+            <span class="object-label">A LITTLE MESSAGE</span>
+            <span class="lock">✦</span>
+          </button>
+
+          <button class="object note-object locked" id="obj3" onclick="openObject(3)">
+            <span class="folded-note">FOR YOU<br><small>don't peek</small></span>
+            <span class="object-label">A FOLDED NOTE</span>
+            <span class="lock">✦</span>
+          </button>
+
+          <button class="object music-object locked" id="obj4" onclick="openObject(4)">
+            <span class="record">♫</span>
+            <span class="object-label">SOMETHING PLAYING</span>
+            <span class="lock">✦</span>
+          </button>
+
+          <button class="object key-object locked" id="obj5" onclick="openObject(5)">
+            <span class="key">⚿</span>
+            <span class="object-label">A TINY KEY</span>
+            <span class="lock">✦</span>
+          </button>
+
+          <div class="envelope-slot">
+            <div class="sealed-envelope" id="finalEnvelope" onclick="openFinal()">
+              <span>FOR KIRAN</span>
+              <small>open last</small>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side-note">
+          <span class="stamp">FOUND<br>WITH LOVE</span>
+          <p class="hand">A little rule:</p>
+          <p>Every object has a question hiding inside it.</p>
+          <p>Answer it correctly and the box gives you the next thing.</p>
+          <p class="muted">And yes… there may be paper everywhere when you get one right. 🎊</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal-card" id="modalCard">
+      <button class="close" onclick="closeModal()">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
